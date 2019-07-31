@@ -23,6 +23,36 @@ h2 {
     letter-spacing: 4px;
 }
 
+h3 {
+    margin: 0;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-color: #009144;
+    line-height: 35px;
+    
+}
+
+h4 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+}
+
+h5 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+}
+
 .container {
     margin: 0 auto;
     width: 90%;
@@ -43,17 +73,23 @@ h2 {
 
 }
 
+.jstf-center {
+    justify-content: center;
+}
+
 .flt-left {
     float: left;
+}
+
+.flt-right {
+    float: right;
 }
 
 .clearfix {
     clear: both;
 }
 
-.ornamento {
-    
-}
+
 
 .ornamento::before {
     content: "";
@@ -120,6 +156,43 @@ h2 {
     text-transform: uppercase;
 }
 
+.apresentacao {
+    width: 1000px;
+    position: relative;
+    top: -60px;
+
+}
+
+.cardapio-home {
+    background-color: #ffffff;
+    width: 500px;
+    height: 250px;
+}
+
+.texto-cardap {
+    padding-top: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+}
+
+
+.btn {
+    background-color: #cf2a38;
+    padding: 16px 24px;
+    border-radius: 0 10px 10px 10px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin: 50px auto 0 auto;;
+    
+    
+}
+
 #logo img {
     display: inline-block;
     padding: 10px 0;
@@ -150,19 +223,41 @@ h2 {
     
 }
 
-#apresentacao {
-    width: 1000px;
-    position: relative;
-    justify-content: center;
-    top: -60px;
-
-}
 
 #faixa-especialidade {
     background-image: url(img/especialidades-home.jpg);
-    height: 
+    height: 200px;
+    background-size: cover;
 }
 
+#faixa-especialidade h2 {
+    color: #009144;
+    font-size: 60px; 
+}
+
+#faixa-cardapio {
+    background-image: url(img/cardapio-home.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+#faixa-cardapio h2 {
+    color: #009144;
+    font-size: 60px; 
+}
+
+
+#delivery {
+    background-color: rgba(0, 145, 68, 0.5);
+    width: 100%;
+    height: 300px;
+}
+
+#delivery p {
+    color: #ffffff;
+    width: 250px;
+    margin-right: 35px;
+}
 
 
 
