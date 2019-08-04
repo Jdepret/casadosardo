@@ -38,6 +38,7 @@ h3 {
 
 h4 {
     margin: 0;
+    line-height: 60px;
     color: #ffffff;
     font-size: 60px;
     text-transform: uppercase;
@@ -50,7 +51,7 @@ h5 {
     color: #ffffff;
     font-size: 18px;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .container {
@@ -97,12 +98,11 @@ h5 {
 
 
 
-.ornamento::before {
-    content: "";
-    background-image: url(img/ornamento.png);
-    height: 75px;
-    width: 150px;
-    margin: 70px 0;
+.ornamento::after {
+    content: url(img/ornamento.png);
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -114,8 +114,14 @@ h5 {
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
-    margin: 0 22px;
+    margin: 0 20px;
     
+}
+
+
+.menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: #009144;
 }
 
 .box-verde {
@@ -163,7 +169,6 @@ h5 {
 }
 
 .apresentacao {
-    width: 1000px;
     position: relative;
 
 }
@@ -185,13 +190,15 @@ h5 {
 }
 
 .texto-cardap {
-    padding-top: 15px;
     padding-left: 15px;
     box-sizing: border-box;
     width: 250px;
     height: 250px;
 }
 
+.paddingtop-15 {
+    padding-top: 15px;
+}
 
 .btn {
     background-color: #cf2a38;
@@ -276,8 +283,15 @@ h5 {
 
 
 #rodape {
-    padding: 40px 0;
+    padding: 35px 0;
     font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#icones-rodape {
+    width: 145px;
+    
 }
 
 #icones-rodape a {
