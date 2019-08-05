@@ -33,7 +33,7 @@ h3 {
     text-decoration: underline;
     text-decoration-color: #009144;
     line-height: 35px;
-    
+
 }
 
 h4 {
@@ -83,7 +83,6 @@ h5 {
 }
 
 
-
 .flt-left {
     float: left;
 }
@@ -103,7 +102,7 @@ h5 {
     margin: 70px auto;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .menu a {
@@ -115,7 +114,7 @@ h5 {
     text-decoration: none;
     display: inline-block;
     margin: 0 20px;
-    
+
 }
 
 
@@ -131,17 +130,7 @@ h5 {
     color: #ffffff;
 }
 
-.box-verde img {
-    margin-right: 30px;
-}
 
-.box-verde h2 {
-    padding-top: 30px;
-}
-
-.box-verde img {
-    float: left;
-}
 
 .box-vermelho {
     width: 720px;
@@ -150,14 +139,13 @@ h5 {
     color: #ffffff;
 }
 
-.box-vermelho img {
-    float: right;
-}
 
-.box-texto {
-    width: 420px;
-    margin-top: 30px;
-    margin-left: 30px;
+.apresentacao-txt {
+    width: 435px;
+    height: 250px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 .benidos {
@@ -185,15 +173,22 @@ h5 {
 
 .cardapio-home {
     background-color: #ffffff;
-    width: 500px;
-    height: 250px;
+    width: 50%;
+}
+
+.cardapio-home img {
+    width: 50%;
 }
 
 .texto-cardap {
     padding-left: 15px;
     box-sizing: border-box;
-    width: 250px;
-    height: 250px;
+    width: 50%;
+    height: 100%;
+}
+
+.texto-cardap a {
+    text-decoration: none;
 }
 
 .paddingtop-15 {
@@ -210,14 +205,26 @@ h5 {
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    margin: 50px auto 0 auto;;
-    
-    
+    margin: 50px auto 0 auto;
+
+
+}
+
+#btn-menu {
+    display: none;
 }
 
 #logo img {
     display: inline-block;
     padding: 10px 0;
+}
+
+#logo-rspsv {
+    display: none;
+}
+
+#menu-rspsv {
+    display: none;
 }
 
 #topo {
@@ -231,18 +238,18 @@ h5 {
     background-image: url(img/banner.jpg);
     text-align: center;
     background-size: cover;
-    
+
 }
 
 #banner p {
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;;
+    letter-spacing: 3px;
     font-kerning: none;
     font-weight: bold;
     margin: 0;
-    
-    
+
+
 }
 
 
@@ -254,7 +261,7 @@ h5 {
 
 #faixa-especialidade h2 {
     color: #009144;
-    font-size: 60px; 
+    font-size: 60px;
 }
 
 #faixa-cardapio {
@@ -265,14 +272,15 @@ h5 {
 
 #faixa-cardapio h2 {
     color: #009144;
-    font-size: 60px; 
+    font-size: 60px;
 }
 
 
 #delivery {
     background-color: rgba(0, 145, 68, 0.5);
     width: 100%;
-    height: 300px;
+    height: 30%;
+    padding: 60px 0;
 }
 
 #delivery p {
@@ -291,7 +299,7 @@ h5 {
 
 #icones-rodape {
     width: 145px;
-    
+
 }
 
 #icones-rodape a {
@@ -299,4 +307,215 @@ h5 {
 }
 
 
+@media screen and (max-width:1024px) {
 
+
+    h1 {
+        font-size: 45px;
+        letter-spacing: 4px;
+
+    }
+    
+
+    h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 25px;
+    }
+
+    h4 {
+        font-size: 50px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .none {
+        display: none;
+
+    }
+
+
+    .menu {
+        display: none;
+    }
+    
+    .box-verde img {
+        width: 250px;
+    }
+
+    
+
+    #logo {
+        display: none;
+
+    }
+
+    #topo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #logo-rspsv {
+        display: inline-block;
+        margin: 15px;
+    }
+
+
+    #menu-rspsv {
+        display: inline-block;
+    }
+
+    #menu-rspsv a {
+        font-size: 18px;
+        color: #000000;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 15px;
+
+
+    }
+
+    #banner p {
+        font-size: 18px;
+        letter-spacing: 2px;
+
+    }
+
+    #delivery p {
+        width: 200px;
+        margin-right: 25px;
+    }
+    
+   
+
+}
+
+@media screen and (max-width:767px) {
+    
+    
+    h2 {
+     font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    #faixa-especialidade h2 {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    }
+    
+    #faixa-cardapio h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    }
+    
+    .texto-cardap {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .box-verde {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box-verde img {
+        width: 35%;
+    }
+    
+    .box-vermelho {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box-vermelho img {
+        width: 35%;
+        
+    }
+    
+    
+    .apresentacao-txt  {
+        width: 65%;
+        height: 100%;
+        padding-top: 10px;
+        padding-left: 13px;
+        font-size: 14px;
+    }
+    
+    .apresentacao-txt p {
+        margin: 5px 0;
+    }
+    
+  
+    
+    .cardapio-home {
+        width: 100%;
+    }
+    
+    .paddingtop-15 {
+        padding-top: 5px;
+    }
+    
+    .texto-cardap p {
+        margin: 5px 0;
+    }
+    
+      #btn-menu {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 45px;
+    }
+    
+    
+    .barra {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin-bottom: 3px;
+        border-radius: 2px;
+    }
+ 
+    
+    #menu-rspsv {
+        display: none;
+        background-color: #2b9740;
+        text-align: center;
+        width: 100%;
+        
+    } 
+    
+    #menu-rspsv a {
+        color: #fff;
+        font-weight: normal;
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #fff;
+        margin: 0;
+        
+    }
+    
+    #menu-rspsv a:last-child {
+        border: none;
+    }
+    
+    .ornamento::after {
+    content: url(img/ornamento_menor.png);
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+
+}
+    
+    
+}
