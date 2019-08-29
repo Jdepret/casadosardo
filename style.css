@@ -113,7 +113,7 @@ h5 {
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
 
 }
 
@@ -360,7 +360,7 @@ h5 {
 
     #logo-rspsv {
         display: inline-block;
-        margin: 15px;
+        margin: 15px 50px;;
     }
 
 
@@ -395,6 +395,8 @@ h5 {
    
 
 }
+
+
 
 @media screen and (max-width:767px) {
     
